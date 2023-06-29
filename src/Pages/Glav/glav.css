@@ -1,19 +1,88 @@
 .glav{
+    position: relative;
+    display: block;
     background-color: rgb(255, 255, 255); 
     font-family: 'Lobster', cursive;
-    text-align: left;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 0px auto; 
+    clear: both;
 }
 .img_logo{
+    
     width: 100%;
     height: 100%;
     position: relative;
 }
 .logo-def{
-    height: 80%;
     
+    margin: 10px auto;
+    height: 60ch;
+    width: 100%;
+    text-align: center;
     background-size: cover;
+    background-image: url(/public/img/logo-def.jpg);
+    opacity: 0.9;
     font-size: 20px;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
 }
+
+.test_logo{
+    
+    text-align: center; 
+} 
+.otz{
+    margin: 0px auto;
+    position: static;
+   
+    height: 650px;
+    padding: 1%;
+
+    max-width: 1000px;
+    max-height: 1000px;
+    border-radius: 15%;
+    border-style: solid;
+    border-color:rgb(255, 141, 47);
+
+}
+.text{
+    padding: 2%; 
+    margin: 0 auto;
+    
+}
+
+button{
+    position: relative;
+    top: -1px;
+    margin: 5px;
+    
+}
+
+
+
+
+article{
+    max-width: 1000px;
+    max-height: 640px;
+    align-items:center;
+
+    position:absolute;
+    top:auto;
+    left:auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--transition); 
+}
+article.activSlide{
+    opacity: 1;
+    transform: translateX(0);
+}
+article.lastSliide{
+    transform: translateX(-100%);
+}
+article.nextSlide{
+    transform: translateX(100%);
+}
+

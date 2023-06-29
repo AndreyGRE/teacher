@@ -8,9 +8,9 @@ import './me.css'
        <>
         <div className="container_mu">
             
-            <div className='img_mu'>
+            
                 <img src='/img/me.jpg' alt="i am" className='img_mu'></img>
-            </div>
+            
             
             <div className='text_mu'>
                 <p>

@@ -1,31 +1,32 @@
 .container_mu{
     text-align: left;
-    margin-left: 10%;
+    margin: 10px auto  ;
+    /* margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+    max-width: 500px;
     border-radius: 5%;
     border-style: solid;
     border-color:rgb(204, 255, 137);
-    max-width: 1500px;
-    padding: 3% ;
+    max-width: 1000px;
+    padding: 1% ;
     
     display: table;
-   
 }
 .img_mu{
-    /* margin: auto; */
-    width: 60%;
-    height: 60%;
-    max-width: 10;
-    float: left;
-    z-index: 100;
+    width: 49%;
+    height: 100%;
+    padding: 10px;
+    float:left;
 }
 .text_mu{
-    position: relative;
+
+    width: 50%;
+    float:left;
+
     text-align:justify ;
     font-size: 18px;
-    z-index: 101;
 }
 
 
