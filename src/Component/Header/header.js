@@ -5,7 +5,7 @@ import { useState } from 'react';
 
  function Header() {
     
-    const [state,setState]=useState()
+    const [state,setState]=useState(0)
     
     const onCategor =(i)=>{
         setState(i)
@@ -23,10 +23,10 @@ import { useState } from 'react';
             
                 <ul className='menu1'>
                     <li className="level1">
-                        <NavLink id={0} onClick={() => onCategor(0)} className={state === 0 ? 'active1 level' : ' level1'} to="/glav"> Главная </NavLink>
+                        <NavLink id={0} onClick={() => onCategor(0)} className={state === 0 ? 'active1 level1' : ' level1'} to="/glav"> Главная </NavLink>
                     </li>
                     <li className="level1">
-                        <NavLink id={1} onClick={() => onCategor(1)} className={state === 1 ? 'active1 level' : ' level1'} to="/about-me"> Обо мне </NavLink>
+                        <NavLink id={1} onClick={() => onCategor(1)} className={state === 1 ? 'active1 level1' : ' level1'} to="/about-me"> Обо мне </NavLink>
                     </li>
                     <li className="level1">
                         <NavLink id={2} onClick={() => onCategor(2)} className={state === 2 ? 'active1 level1' : ' level1'} to="/for-parents"> Для вас родители </NavLink>

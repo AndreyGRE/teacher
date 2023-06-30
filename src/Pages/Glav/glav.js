@@ -38,7 +38,7 @@ import './glav.css'
         <div className="glav">
             <div className='logo-def'>
                 <p className='test_logo'>
-                    {/* <img src='/img/logo-def.jpg' className='img_logo'></img> */}
+                    
                     <h1>
                     ЛОГОПЕД-ДЕФЕКТОЛОГ
                     </h1>
@@ -67,8 +67,8 @@ import './glav.css'
                     <article className={position} key={name}>
                         <img  src={img} alt='отзыв' height={440}></img>
                         <p className='text'>{text}</p>
-                        <button className='prev' onClick={()=>{setCurrentIndex(prevState => prevState - 1)}}>-</button>
-                        <button className='next' onClick={()=>{setCurrentIndex(prevState => prevState + 1)}}>+</button>
+                        <button className='prev' onClick={()=>{setCurrentIndex(prevState => prevState - 1)}}>назад</button>
+                        <button className='next' onClick={()=>{setCurrentIndex(prevState => prevState + 1)}}>вперед</button>
                     </article>
                     )
                  }
